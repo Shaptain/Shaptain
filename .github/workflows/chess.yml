@@ -86,12 +86,12 @@ jobs:
           board = chess.Board(game_data['fen'])
           
           # Generate board representation
-          piece_to_img = {
-              'r': 'br', 'n': 'bn', 'b': 'bb', 'q': 'bq', 'k': 'bk', 'p': 'bp',
-              'R': 'wr', 'N': 'wn', 'B': 'wb', 'Q': 'wq', 'K': 'wk', 'P': 'wp'
+          piece_to_emoji = {
+              'r': '♜', 'n': '♞', 'b': '♝', 'q': '♛', 'k': '♚', 'p': '♟',
+              'R': '♖', 'N': '♘', 'B': '♗', 'Q': '♕', 'K': '♔', 'P': '♙'
           }
           
-          colors = ['#ff006e', '#00f5ff']  # Pink and Cyan
+          empty_squares = ['🟪', '🔷']  # Purple and Cyan
           
           board_md = '|   | A | B | C | D | E | F | G | H |   |\n'
           board_md += '|---|---|---|---|---|---|---|---|---|---|\n'
@@ -103,11 +103,11 @@ jobs:
                   piece = board.piece_at(square)
                   
                   if piece:
-                      piece_img = piece_to_img[piece.symbol()]
-                      row += f' <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/{piece_img}.png" width="50"> |'
+                      piece_emoji = piece_to_emoji[piece.symbol()]
+                      row += f' {piece_emoji} |'
                   else:
-                      color = colors[(rank + file) % 2]
-                      row += f' ![](https://via.placeholder.com/50/{color[1:]}/{color[1:]}.png) |'
+                      empty_emoji = empty_squares[(rank + file) % 2]
+                      row += f' {empty_emoji} |'
               
               row += f' **{rank + 1}** |\n'
               board_md += row
