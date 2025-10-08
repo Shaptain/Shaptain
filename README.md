@@ -17,9 +17,9 @@
 
 <div align="center">
 
-## ♟️ **chesssssssss**
+##  **Let's play Chessssss**
 
-### *make your move by creating an issue*
+### *Make your move by creating an issue*
 
 </div>
 
@@ -28,30 +28,30 @@
 
 |   | A | B | C | D | E | F | G | H |   |
 |---|---|---|---|---|---|---|---|---|---|
-| **8** | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/br.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bn.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bb.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bq.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bk.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bb.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bn.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/br.png" width="50"> | **8** |
-| **7** | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/bp.png" width="50"> | **7** |
+| **8** | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/br.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bn.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bb.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bq.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bk.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bb.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bn.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/br.png" width="50"> | **8** |
+| **7** | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/bp.png" width="50"> | **7** |
 | **6** | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | **6** |
 | **5** | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | **5** |
 | **4** | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | **4** |
 | **3** | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | ![](https://via.placeholder.com/50/00f5ff/00f5ff.png) | ![](https://via.placeholder.com/50/ff006e/ff006e.png) | **3** |
-| **2** | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wp.png" width="50"> | **2** |
-| **1** | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wr.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wn.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wb.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wq.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wk.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wb.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wn.png" width="50"> | <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/wr.png" width="50"> | **1** |
+| **2** | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wp.png" width="50"> | **2** |
+| **1** | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wr.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wn.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wb.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wq.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wk.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wb.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wn.png" width="50"> | <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/wr.png" width="50"> | **1** |
 |   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |
 
-** It's your move! You're playing as Black.**
+**It's your move! You're playing as Black.**
 
 </div>
 
 <div align="center">
 
-### How to Play
+###  How to Play
 
 1. **Create a new issue** titled with your move in [chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess))
    - Examples: `e2 to e4`, `Nf3`, `O-O` (castling)
 2. **Wait for validation** - The bot will check if your move is legal
 3. **Watch the board update** - If valid, I'll make my move and the board updates automatically!
 
-**[Make Your Move →](https://github.com/Shaptain/Shaptain/issues/new?title=chess%7Cmove)**
+**[ Make Your Move →](https://github.com/Shaptain/Shaptain/issues/new?title=chess%7Cmove)**
 
 </div>
 

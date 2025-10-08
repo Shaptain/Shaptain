@@ -104,7 +104,7 @@ jobs:
                   
                   if piece:
                       piece_img = piece_to_img[piece.symbol()]
-                      row += f' <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/{piece_img}.png" width="50"> |'
+                      row += f' <img src="https://raw.githubusercontent.com/timburgan/timburgan/master/chess_images/{piece_img}.png" width="50"> |'
                   else:
                       color = colors[(rank + file) % 2]
                       row += f' ![](https://via.placeholder.com/50/{color[1:]}/{color[1:]}.png) |'
