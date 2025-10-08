@@ -6,7 +6,7 @@
   <img src="assets/github.gif" alt="Spider-Verse Glitch Background" style="width: 100%; border-radius: 10px; display: block;" />
   
   <!-- Overlapping Terminal GIF -->
-  <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 80%; max-width: 800px;">
+  <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 80%; max-width: 700px;">
     <img src="assets/github2.gif" alt="Terminal Typing" style="width: 100%; border-radius: 5px; box-shadow: 0 0 30px rgba(236, 0, 140, 0.6);" />
   </div>
 </div>
@@ -47,7 +47,7 @@
 ### How to Play
 
 1. **Create a new issue** titled with your move in [chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess))
-   - Examples: `e2 to e4`, `Nf3`, `O-O` (castling)
+   Examples: `e2 to e4`, `Nf3`, `O-O` (castling)
 2. **Wait for validation** - The bot will check if your move is legal
 3. **Watch the board update** - If valid, I'll make my move and the board updates automatically!
 
