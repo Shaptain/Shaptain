@@ -1,0 +1,179 @@
+name: Chess Game Automation
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  chess-move:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'chess|')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install python-chess
+
+      - name: Process chess move
+        id: move
+        run: |
+          python3 << 'EOF'
+          import chess
+          import chess.svg
+          import json
+          import os
+          
+          # Read current game state
+          with open('chess.json', 'r') as f:
+              game_data = json.load(f)
+          
+          board = chess.Board(game_data['fen'])
+          
+          # Get move from issue title
+          issue_title = "${{ github.event.issue.title }}"
+          move_str = issue_title.replace('chess|', '').strip()
+          
+          try:
+              # Try to parse the move
+              move = board.parse_san(move_str)
+              
+              # Check if move is legal
+              if move in board.legal_moves:
+                  board.push(move)
+                  game_data['fen'] = board.fen()
+                  game_data['moves'].append(move_str)
+                  game_data['lastMove'] = move_str
+                  game_data['turn'] = 'black' if board.turn == chess.BLACK else 'white'
+                  game_data['check'] = board.is_check()
+                  game_data['checkmate'] = board.is_checkmate()
+                  game_data['stalemate'] = board.is_stalemate()
+                  game_data['gameOver'] = board.is_game_over()
+                  
+                  # Save updated game state
+                  with open('chess.json', 'w') as f:
+                      json.dump(game_data, f, indent=2)
+                  
+                  print("VALID_MOVE")
+              else:
+                  print("ILLEGAL_MOVE")
+                  exit(1)
+          except Exception as e:
+              print(f"INVALID_MOVE: {str(e)}")
+              exit(1)
+          EOF
+
+      - name: Update README
+        if: success()
+        run: |
+          python3 << 'EOF'
+          import chess
+          import json
+          
+          # Read game state
+          with open('chess.json', 'r') as f:
+              game_data = json.load(f)
+          
+          board = chess.Board(game_data['fen'])
+          
+          # Generate board representation
+          piece_to_img = {
+              'r': 'br', 'n': 'bn', 'b': 'bb', 'q': 'bq', 'k': 'bk', 'p': 'bp',
+              'R': 'wr', 'N': 'wn', 'B': 'wb', 'Q': 'wq', 'K': 'wk', 'P': 'wp'
+          }
+          
+          colors = ['#ff006e', '#00f5ff']  # Pink and Cyan
+          
+          board_md = '|   | A | B | C | D | E | F | G | H |   |\n'
+          board_md += '|---|---|---|---|---|---|---|---|---|---|\n'
+          
+          for rank in range(7, -1, -1):
+              row = f'| **{rank + 1}** |'
+              for file in range(8):
+                  square = chess.square(file, rank)
+                  piece = board.piece_at(square)
+                  
+                  if piece:
+                      piece_img = piece_to_img[piece.symbol()]
+                      row += f' <img src="https://raw.githubusercontent.com/Shaptain/Shaptain/main/chess_images/{piece_img}.png" width="50"> |'
+                  else:
+                      color = colors[(rank + file) % 2]
+                      row += f' ![](https://via.placeholder.com/50/{color[1:]}/{color[1:]}.png) |'
+              
+              row += f' **{rank + 1}** |\n'
+              board_md += row
+          
+          board_md += '|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |'
+          
+          # Read README
+          with open('README.md', 'r') as f:
+              readme = f.read()
+          
+          # Find and replace chess board section
+          start_marker = '|   | A | B | C | D | E | F | G | H |   |'
+          end_marker = '|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |'
+          
+          start_idx = readme.find(start_marker)
+          end_idx = readme.find(end_marker) + len(end_marker)
+          
+          if start_idx != -1 and end_idx != -1:
+              new_readme = readme[:start_idx] + board_md + readme[end_idx:]
+              
+              with open('README.md', 'w') as f:
+                  f.write(new_readme)
+          
+          EOF
+
+      - name: Commit changes
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add chess.json README.md
+          git commit -m "♟️ Chess move: ${{ github.event.issue.title }}"
+          git push
+
+      - name: Close issue with success message
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ' Valid move! The board has been updated. My turn now! 🕷️'
+            });
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
+
+      - name: Close issue with error message
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ Invalid move! Please check the chess notation and try again. [Learn more about chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess))'
+            });
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
